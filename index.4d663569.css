@@ -284,4 +284,22 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 768px) {
+  section#home h1 {
+    background-color: #ffffffbf;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    padding: .5rem;
+    display: inline-block;
+    box-shadow: 0 0 10px #ffffff80;
+  }
+
+  section#home h2 {
+    background-color: #ffffffbf;
+    border-radius: 5px;
+    padding: .5rem;
+    display: inline-block;
+  }
+}
+
 /*# sourceMappingURL=index.4d663569.css.map */
