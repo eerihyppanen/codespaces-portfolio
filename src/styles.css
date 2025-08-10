@@ -190,13 +190,29 @@ img.socialIcon {
 @media (max-width: 768px) {
   /* Fix Home component positioning */
   section#home div:first-of-type {
-    position: static !important;
-    width: 100% !important;
-    padding: 2rem 1rem !important;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    margin: 2rem 1rem;
+    position: relative !important; 
+    width: 85% !important;
+    max-width: 85% !important;
+    margin: 8rem auto 2rem !important;
+    padding: 1.5rem !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    left: auto !important;
+    transform: none !important;
+    border-radius: 8px !important;
+    text-align: center !important;
+  }
+
+  /* Add more vertical space above the text */
+  section#home {
+    padding-top: 2rem !important; 
+  }
+  
+  /* Ensure text doesn't overflow */
+  section#home h1 {
+    font-size: 3rem !important;
+    word-break: break-word !important;
+    hyphens: auto !important;
   }
   
   /* Fix About component width */
