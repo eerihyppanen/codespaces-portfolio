@@ -54,32 +54,47 @@ const About = () => {
       <div
         style={{
           backgroundColor: "white",
-          width: "50%",
-          padding: "4rem",
-          margin: "3rem auto",
+          width: "min(95%, 800px)",
+          padding: "clamp(1rem, 4vw, 4rem)",
+          margin: "clamp(1rem, 3vw, 3rem) auto",
           textAlign: "center",
           borderRadius: "10px",
           boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
+          boxSizing: "border-box",
+          maxWidth: "calc(100vw - 2rem)",
         }}
       >
         <h2>About Myself</h2>
-        <p className="large">{description}</p>
-        <hr />
+        <p className="large" style={{ margin: "0 0 1rem 0" }}>
+          {description}
+        </p>
+        <hr style={{ margin: "1.5rem 0" }} />
         <ul
           style={{
             textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
+            columns: window.innerWidth > 768 ? 2 : 1,
+            fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
+            margin: "1rem 0",
+            gap: "2rem",
+            paddingLeft: "1.5rem",
+            paddingRight: "0.5rem",
           }}
         >
           {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
+            <li key={skill} style={{ marginBottom: "0.5rem" }}>
+              {skill}
+            </li>
           ))}
         </ul>
-        <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <hr style={{ margin: "1.5rem 0" }} />
+        <p
+          style={{
+            padding: "0",
+            margin: "1rem 0 0 0",
+          }}
+        >
+          {detailOrQuote}
+        </p>
       </div>
     </section>
   );
