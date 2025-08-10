@@ -204,12 +204,19 @@ img.socialIcon {
     width: 90% !important;
     padding: 2rem 1rem !important;
     margin: 2rem auto !important;
+    box-sizing: border-box !important;
   }
   
   /* Fix skills list columns */
   section#about ul {
     columns: 1 !important;
     margin: 1rem 0 !important;
+    padding-left: 1.5rem !important;
+  }
+  
+  /* Add padding fix for quote section */
+  section#about p:last-child {
+    padding: 1rem 0.5rem 0 !important;
   }
   
   /* Fix Portfolio layout */
@@ -234,6 +241,11 @@ img.socialIcon {
     width: 95% !important;
     padding: 1.5rem 1rem !important;
     margin: 1rem auto !important;
+  }
+  
+  section#about ul {
+    margin: 0.5rem 0 !important;
+    font-size: 1rem !important;
   }
   
   section#home div:first-of-type {
