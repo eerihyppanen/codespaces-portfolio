@@ -175,13 +175,27 @@ img.socialIcon {
 
 @media (max-width: 768px) {
   section#home div:first-of-type {
-    text-align: center;
-    background: #ffffffe6;
-    border-radius: 10px;
-    margin: 2rem 1rem;
-    width: 100% !important;
-    padding: 2rem 1rem !important;
-    position: static !important;
+    width: 85% !important;
+    max-width: 85% !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+    border-radius: 8px !important;
+    margin: 8rem auto 2rem !important;
+    padding: 1.5rem !important;
+    position: relative !important;
+    left: auto !important;
+    overflow: hidden !important;
+    transform: none !important;
+  }
+
+  section#home {
+    padding-top: 2rem !important;
+  }
+
+  section#home h1 {
+    word-break: break-word !important;
+    hyphens: auto !important;
+    font-size: 3rem !important;
   }
 
   section#about > div {
