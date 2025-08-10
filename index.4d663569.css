@@ -27,6 +27,12 @@ section.padding {
   padding: 5rem 0;
 }
 
+@media (max-width: 768px) {
+  section.padding {
+    padding: 2rem 1rem;
+  }
+}
+
 section img.background {
   height: 100%;
   object-fit: cover;
@@ -47,11 +53,30 @@ h1 {
   line-height: .8;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
 h2 {
   margin: 0;
   padding-top: 1rem;
   font-size: 2rem;
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
 }
 
 h3 {
@@ -71,12 +96,28 @@ p.large {
   font-size: 24px;
 }
 
+@media (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+
+  p.large {
+    font-size: 20px;
+  }
+}
+
 p.small {
   font-size: 15px;
 }
 
 hr {
   margin: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  hr {
+    margin: 1.5rem 0;
+  }
 }
 
 li {
@@ -103,6 +144,14 @@ a:hover {
   display: grid;
 }
 
+@media (max-width: 768px) {
+  .container {
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    margin: 10px;
+  }
+}
+
 .container .box {
   text-align: center;
   border: 1px solid #ccc;
@@ -113,9 +162,65 @@ a:hover {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .container .box {
+    padding: 16px 12px;
+  }
+}
+
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+@media (max-width: 768px) {
+  section#home div:first-of-type {
+    text-align: center;
+    background: #ffffffe6;
+    border-radius: 10px;
+    margin: 2rem 1rem;
+    width: 100% !important;
+    padding: 2rem 1rem !important;
+    position: static !important;
+  }
+
+  section#about > div {
+    width: 90% !important;
+    margin: 2rem auto !important;
+    padding: 2rem 1rem !important;
+  }
+
+  section#about ul {
+    columns: 1 !important;
+    margin: 1rem 0 !important;
+  }
+
+  section#portfolio > div {
+    gap: 2rem;
+    flex-direction: column !important;
+  }
+
+  section#portfolio > div > div:first-child {
+    order: 2;
+    max-width: 100% !important;
+  }
+
+  section#portfolio .container {
+    order: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  section#about > div {
+    width: 95% !important;
+    margin: 1rem auto !important;
+    padding: 1.5rem 1rem !important;
+  }
+
+  section#home div:first-of-type {
+    margin: 1rem .5rem;
+    padding: 1.5rem 1rem !important;
+  }
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */
