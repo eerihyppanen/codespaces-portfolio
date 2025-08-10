@@ -33,6 +33,13 @@ section.padding {
   padding: 5rem 0;
 }
 
+/* Mobile padding adjustment */
+@media (max-width: 768px) {
+  section.padding {
+    padding: 2rem 1rem;
+  }
+}
+
 section img.background {
   height: 100%;
   left: 50%;
@@ -53,11 +60,32 @@ h1 {
   margin: 0;
 }
 
+/* Mobile h1 adjustment */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
 h2 {
   font-size: 2rem;
   font-weight: 400;
   margin: 0;
   padding-top: 1rem;
+}
+
+/* Mobile h2 adjustment */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
 }
 
 h3 {
@@ -77,12 +105,30 @@ p.large {
   font-size: 24px;
 }
 
+/* Mobile text adjustments */
+@media (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+  
+  p.large {
+    font-size: 20px;
+  }
+}
+
 p.small {
   font-size: 15px;
 }
 
 hr {
   margin: 2.5rem;
+}
+
+/* Mobile hr adjustment */
+@media (max-width: 768px) {
+  hr {
+    margin: 1.5rem 0;
+  }
 }
 
 li {
@@ -109,6 +155,15 @@ a:hover {
   margin: 20px auto;
 }
 
+/* Mobile container adjustments */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin: 10px;
+    grid-gap: 15px;
+  }
+}
+
 .container .box {
   border-radius: 10px;
   border: 1px solid rgb(204, 204, 204);
@@ -119,7 +174,70 @@ a:hover {
   text-align: center;
 }
 
+/* Mobile box adjustments */
+@media (max-width: 768px) {
+  .container .box {
+    padding: 16px 12px;
+  }
+}
+
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+/* Additional mobile-specific styles */
+@media (max-width: 768px) {
+  /* Fix Home component positioning */
+  section#home div:first-of-type {
+    position: static !important;
+    width: 100% !important;
+    padding: 2rem 1rem !important;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 2rem 1rem;
+  }
+  
+  /* Fix About component width */
+  section#about > div {
+    width: 90% !important;
+    padding: 2rem 1rem !important;
+    margin: 2rem auto !important;
+  }
+  
+  /* Fix skills list columns */
+  section#about ul {
+    columns: 1 !important;
+    margin: 1rem 0 !important;
+  }
+  
+  /* Fix Portfolio layout */
+  section#portfolio > div {
+    flex-direction: column !important;
+    gap: 2rem;
+  }
+  
+  section#portfolio > div > div:first-child {
+    max-width: 100% !important;
+    order: 2;
+  }
+  
+  section#portfolio .container {
+    order: 1;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  section#about > div {
+    width: 95% !important;
+    padding: 1.5rem 1rem !important;
+    margin: 1rem auto !important;
+  }
+  
+  section#home div:first-of-type {
+    margin: 1rem 0.5rem;
+    padding: 1.5rem 1rem !important;
+  }
 }
