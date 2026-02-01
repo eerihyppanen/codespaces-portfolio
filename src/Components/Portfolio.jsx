@@ -33,7 +33,7 @@ const projectList = [
   {
     title: "Java based Android app",
     description:
-      "Part of course work a java-based fishing app for android.",
+      "Part of course work a java-based fishing app for Android.",
     url: "https://github.com/eerihyppanen/Kalastus-sovellus",
   },
   {
