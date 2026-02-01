@@ -39,8 +39,14 @@ const projectList = [
   {
     title: "Web based project work",
     description:
-      "Interactive web page application using HTML, CSS, JavaScript, Bootstrap, and Statistics Finland API for data visualization.",
+      "Interactive web page application using HTML, CSS, JavaScript, and Statistics Finland API for data visualization.",
     url: "https://github.com/eerihyppanen/ProjectWorkWeb",
+  },
+  {
+    title: "Android Workout App",
+    description:
+      "A modern Android workout tracking application built with Kotlin.",
+    url: "https://github.com/eerihyppanen/TrainingApp",
   },
 ];
 
