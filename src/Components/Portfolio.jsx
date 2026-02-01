@@ -46,7 +46,7 @@ const projectList = [
     title: "Android Workout App",
     description:
       "A modern Android workout tracking application built with Kotlin.",
-    url: "https://github.com/eerihyppanen/TrainingApp",
+    url: "https://github.com/eerihyppanen/TrainingAppReadme",
   },
 ];
 
