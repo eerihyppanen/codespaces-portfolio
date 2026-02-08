@@ -48,6 +48,12 @@ const projectList = [
       "A modern Android workout tracking application built with Kotlin.",
     url: "https://github.com/eerihyppanen/TrainingAppReadme",
   },
+  {
+    title: "Reddit-style web forum",
+    description:
+      "A Reddit-style forum created as part of university weekly exercises, built with TypeScript and RESTful API design.",
+    url: "https://github.com/eerihyppanen/RedditExercise",
+  },
 ];
 
 const Portfolio = () => {
